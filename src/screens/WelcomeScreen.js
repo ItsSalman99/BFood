@@ -3,7 +3,7 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import welcomestyles from '../styles/welcomestyles';
 
 
-const WelcomeScreen = () => {
+const WelcomeScreen = ({navigation}) => {
     return (
         <View style={welcomestyles.container}>
             <View style={welcomestyles.logoContainer}>
@@ -14,7 +14,7 @@ const WelcomeScreen = () => {
             </View>
             <View style={welcomestyles.imgContainer}>
                 <Image source={require('../assets/food-service.png')} style={welcomestyles.img}/>
-                <TouchableOpacity style={welcomestyles.btn}>
+                <TouchableOpacity style={welcomestyles.btn} onPress={()=> navigation.navigate('registerScreen')}>
                     <Text style={welcomestyles.btnText}>Get Started</Text>
                 </TouchableOpacity>
             </View>

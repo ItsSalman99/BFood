@@ -1,9 +1,9 @@
 import React from "react";
-import WelcomeScreen from "./src/screens/WelcomeScreen";
+import MainNavigation from "./src/navigations/MainNavigation";
 
 const App = () =>{
   return (
-      <WelcomeScreen/>
+      <MainNavigation/>
   )
 }
 
